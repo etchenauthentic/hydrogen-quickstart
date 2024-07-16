@@ -48,7 +48,7 @@ export function PageLayout({
  */
 function CartAside({cart}) {
   return (
-    <Aside type="cart" heading="CART TESTING">
+    <Aside type="cart" heading="CART">
       <Suspense fallback={<p>Loading cart ...</p>}>
         <Await resolve={cart}>
           {(cart) => {
