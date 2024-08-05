@@ -2,6 +2,7 @@ import {defer} from '@shopify/remix-oxygen';
 import {Await, useLoaderData, Link} from '@remix-run/react';
 import {Suspense} from 'react';
 import {Image, Money} from '@shopify/hydrogen';
+import '../styles/homepage.css';
 
 /**
  * @type {MetaFunction}
@@ -66,15 +67,17 @@ export default function Homepage() {
     <div className="home">       
     
         <header className="navbar">
-          <div className="logo">
-
+          <div className="nav-left">
+            <div className="logo">
+              </div>
+              <nav>
+                <ul>
+                  <li><a href="#">authentic</a></li>
+                  <li><a href="#">Brands</a></li>
+                  <li><a href="#">FAQs</a></li>
+                </ul>
+              </nav>
           </div>
-          <nav>
-            <ul>
-              <li><a href="#">Brands</a></li>
-              <li><a href="#">FAQs</a></li>
-            </ul>
-          </nav>
           <button className="logout-btn">Log Out</button>
         </header>
 
@@ -84,11 +87,14 @@ export default function Homepage() {
             <p>$5/month or $50/year</p>
             <button className="cta-btn">Try Free for 30 Days</button>
           </div>
-          <div className="promo-image">
+          {/* <div className="promo-image"> */}
+            {/* <img src="" alt="Promo"/> */}
+          {/* </div> */}
           </div>
-        </div>
-
-      {/* <FeaturedCollection collection={data.featuredCollection} />
+        
+        
+{/* 
+      <FeaturedCollection collection={data.featuredCollection} />
       <RecommendedProducts products={data.recommendedProducts} /> */}
     </div>
   );
