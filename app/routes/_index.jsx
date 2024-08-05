@@ -7,7 +7,7 @@ import {Image, Money} from '@shopify/hydrogen';
  * @type {MetaFunction}
  */
 export const meta = () => {
-  return [{title: 'Hydrogen | ABG HOME'}];
+  return [{title: 'Hydrogen | HOME'}];
 };
 
 /**
@@ -63,9 +63,33 @@ export default function Homepage() {
   /** @type {LoaderReturnData} */
   const data = useLoaderData();
   return (
-    <div className="home">
-      <FeaturedCollection collection={data.featuredCollection} />
-      <RecommendedProducts products={data.recommendedProducts} />
+    <div className="home">       
+    
+        <header className="navbar">
+          <div className="logo">
+
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">Brands</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </nav>
+          <button className="logout-btn">Log Out</button>
+        </header>
+
+        <div className="promo">
+          <div className="promo-text">
+            <h1>Unlock 10% Off & Free Shipping on your favorite brands</h1>
+            <p>$5/month or $50/year</p>
+            <button className="cta-btn">Try Free for 30 Days</button>
+          </div>
+          <div className="promo-image">
+          </div>
+        </div>
+
+      {/* <FeaturedCollection collection={data.featuredCollection} />
+      <RecommendedProducts products={data.recommendedProducts} /> */}
     </div>
   );
 }
@@ -193,3 +217,4 @@ const RECOMMENDED_PRODUCTS_QUERY = `#graphql
 /** @typedef {import('storefrontapi.generated').FeaturedCollectionFragment} FeaturedCollectionFragment */
 /** @typedef {import('storefrontapi.generated').RecommendedProductsQuery} RecommendedProductsQuery */
 /** @typedef {import('@shopify/remix-oxygen').SerializeFrom<typeof loader>} LoaderReturnData */
+

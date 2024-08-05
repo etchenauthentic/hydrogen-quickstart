@@ -1,0 +1,57 @@
+/* General Reset and Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(90deg, #0033cc, #66ccff);
+    color: white;
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav li {
+    margin-right: 20px;
+}
+
+.navbar nav a {
+    color: white;
+    font-weight: bold;
+}
+
+.logout-btn {
+    background-color: white;
+    color: #0033cc;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background-color: #f0f0f0;
+}
+
+
