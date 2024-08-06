@@ -1,9 +1,9 @@
-body {
+  body {
     font-family: Arial, sans-serif;
   }
   
   .home {
-    background-color: #fff; 
+    background-color: #fff;
   }
   
   .navbar {
@@ -13,30 +13,32 @@ body {
     background-color: #2C4C9C;
     padding: 20px 30px;
   }
-
+  
   .navbar .nav-left {
     display: flex;
     align-items: center;
   }
   
-  .navbar .logo {
-    font-size: 1.5rem;
-    color: #fff;
+  
+  .navbar img {
+    width: 60%;
+    height: 100%;
   }
   
   .navbar nav ul {
     list-style-type: none;
     display: flex;
     gap: 1rem;
+    align-items: center;
   }
   
   .navbar nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: #fff;
   }
   
   .navbar .logout-btn {
-    background-color: #ffffff;
+    background-color: #fff;
     color: #2C4C9C;
     border: none;
     padding: 0.5rem 1rem;
@@ -46,17 +48,18 @@ body {
   
   .promo {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 2rem 1rem;
+    padding: 1rem;
     background-color: #f5f5f5;
     border-radius: 8px;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
   
   .promo .promo-text h1 {
-    font-size: 68px;
+    font-size: 70px;
     margin-bottom: 1rem;
+    width: 690px;
   }
   
   .promo .promo-text p {
@@ -74,16 +77,18 @@ body {
     text-align: center;
     display: inline-block;
     background: linear-gradient(to right, #2C4C9C, #24a4f4);
-
   }
   
-  /* .promo .promo-image {
-    max-width: 357px;
-    max-height: 357px;
-  }
-  
-  .promo .promo-image img {
+  .promo-image {
+    max-width: 450px;
     width: 100%;
-    height: auto;
-    border-radius: 8px;
-  } */
+    display: inline-block;
+  }
+  
+  .promo-image img {
+    margin-left: 40px; 
+    display: block;
+    max-width: 100%;
+    height: fit-content;
+  }
+  

@@ -3,6 +3,8 @@ import {Await, useLoaderData, Link} from '@remix-run/react';
 import {Suspense} from 'react';
 import {Image, Money} from '@shopify/hydrogen';
 import '../styles/homepage.css';
+import juicyCouture from '../images/JuicyCouture.Image.jpg';
+import authentic from '../images/Authentic_Pill_SVG.jpg';
 
 /**
  * @type {MetaFunction}
@@ -68,11 +70,9 @@ export default function Homepage() {
     
         <header className="navbar">
           <div className="nav-left">
-            <div className="logo">
-              </div>
               <nav>
                 <ul>
-                  <li><a href="#">authentic</a></li>
+                  <img src={authentic} alt="Authentic"/>
                   <li><a href="#">Brands</a></li>
                   <li><a href="#">FAQs</a></li>
                 </ul>
@@ -83,14 +83,15 @@ export default function Homepage() {
 
         <div className="promo">
           <div className="promo-text">
+            <img src={authentic} alt="Authentic"/>
             <h1>Unlock 10% Off & Free Shipping on your favorite brands</h1>
             <p>$5/month or $50/year</p>
             <button className="cta-btn">Try Free for 30 Days</button>
           </div>
-          {/* <div className="promo-image"> */}
-            {/* <img src="" alt="Promo"/> */}
-          {/* </div> */}
-          </div>
+            <div className="promo-image">
+              <img src={juicyCouture} alt="Juicy"/>
+            </div>
+        </div>
         
         
 {/* 
